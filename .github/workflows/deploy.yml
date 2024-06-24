@@ -36,7 +36,7 @@ jobs:
         with:
           node-version-file: .nvmrc
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Build Site
         env:
           API_KEY: ${{ secrets.GOOGLE_API_KEY }}
